@@ -1,0 +1,21 @@
+.innput{
+    height: 200px;
+    width: 1500px;
+    resize: none;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.container{
+    margin-top: 15px;
+}
+
+.con{
+    margin-top: 15px;
+}
+
+.check{
+    margin-top: 10px;
+    height: 20px;
+    
+}

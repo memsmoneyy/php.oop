@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(148, 213, 238);
+}
+img{
+    vertical-align: middle;
+    height: 16px;
+    width: 16;
+ }
+.all{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 20px 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.me{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    color: green;
+    border-radius: 8px;
+
+}
+.addr{
+    border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 15px;
+  color: green;
+  border-radius: 8px;
+
+}
+.FD{
+    border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 15px;
+  color: green;
+  border-radius: 8px;
+}
+.ID{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 15px;
+    color: green;
+    border-radius: 8px;
+
+
+}
+.Edu{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 15px;
+    color: green; 
+     border-radius: 8px;
+    
+}
+.app{
+    border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 15px;
+  color: green;
+  border-radius: 8px;
+
+}
+.config{
+    border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 8px;
+
+}
+.Cd{
+    border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 15px;
+  color: skyblue;
+  border-radius: 8px;
+
+}
+.let{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.fa fa-angle-up{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+   vertical-align: middle;
+   height: 16px;
+   width: 16;
+}

@@ -1,0 +1,167 @@
+$(document).ready(function(){
+
+	// This controls the auth toggle on landing page
+	$('#signin').hide();
+	$('#resetbtn').hide();
+	$('#email-field').show();
+	$('#phone-field').show();
+	$('#reset-field').hide();
+	$('#Dforms').hide();
+	$('#forgotLink').hide();
+	$('#otherBtn').show();
+	$('#registerTxt').show();
+
+	$('#signin-').click(function(){
+		$('#authForm').attr('action', 'teacher/signIn');
+		$('#signup').hide();
+		$('#resetbtn').hide();
+		$('#Dforms').hide();
+		$('#signin').show();
+		$('#reqEmail').prop('required', false);
+		$('#reqPhone').prop('required', false);
+		$('#email-field').hide();
+		$('#phone-field').hide();
+		$('#email2-field').show();
+		$('#pass-field').show();
+		$('#reset-field').hide();
+		$('#reset-field').attr('disabled');
+		$('#email-field').attr('disabled');
+		$('#phone-field').attr('disabled');
+		$('#otherBtn').show();
+		$('#forgotLink').show();
+		$('#loginTxt').show();
+		$('#registerTxt').hide();
+	});
+
+	$('#signup-').click(function(){
+		$('#authForm').attr('action', 'teacher/signUp');
+		$('#signup').show();
+		$('#resetbtn').hide();
+		$('#Dforms').hide();
+		$('#signin').hide();
+		$('#reqEmail').prop('required', 'required');
+		$('#reqPhone').prop('required', 'required');
+		$('#email-field').show();
+		$('#phone-field').show();
+		$('#email2-field').show();
+		$('#pass-field').show();
+		$('#reset-field').hide();
+		$('#reset-field').attr('disabled');
+		$('#email-field').removeAttr('disabled');
+		$('#phone-field').removeAttr('disabled');
+		$('#otherBtn').show();
+		$('#forgotLink').hide();
+		$('#loginTxt').hide();
+		$('#registerTxt').show();
+	});
+
+	// Reset Password fields
+	$('#reset-').click(function(){
+		$('#authForm').attr('action', 'pass/reset');
+		$('#signup').hide();
+		$('#signin').hide();
+		$('#Dforms').hide();
+		$('#resetbtn').show();
+		$('#reqEmail').prop('required', false);
+		$('#reqPhone').prop('required', false);
+		$('#email-field').hide();
+		$('#phone-field').hide();
+		$('#email2-field').hide();
+		$('#pass-field').hide();
+		$('#reset-field').show();
+		$('#reset-field').removeAttr('disabled');
+		$('#otherBtn').show();
+		$('#forgotLink').hide();
+		$('#loginTxt').hide();
+		$('#registerTxt').hide();
+	});
+
+	// Download Forms
+	$('#formDownload').click(function(){
+		$('#signup').hide();
+		$('#signin').hide();
+		$('#resetbtn').hide();
+		$('#email-field').hide();
+		$('#phone-field').hide();
+		$('#email2-field').hide();
+		$('#pass-field').hide();
+		$('#reset-field').hide();
+		$('#otherBtn').hide();
+		$('#Dforms').show();
+		$('#forgotLink').hide();
+		$('#loginTxt').hide();
+		$('#registerTxt').hide();
+	});
+
+	// This allows for switching between sections on the main page
+	$('#section1').show();
+	$('#section2').hide();
+	$('#section3').hide();
+	$('#section4').hide();
+	$('#section5').hide();
+	$('#section6').hide();
+	$('#submitBtn').hide();
+
+	$('#prev1').click(function() {
+		$('#section1').show();
+		$('#section2').hide();
+		$('#section3').hide();
+		$('#section4').hide();
+		$('#section5').hide();
+		$('#section6').hide();
+	});
+
+	$('#nxt1, #prev2').click(function() {
+		$('#section2').show();
+		$('#section1').hide();
+		$('#section3').hide();
+		$('#section4').hide();
+		$('#section5').hide();
+		$('#section6').hide();
+	});
+
+	$('#nxt2, #prev3').click(function() {
+		$('#section3').show();
+		$('#section1').hide();
+		$('#section2').hide();
+		$('#section4').hide();
+		$('#section5').hide();
+		$('#section6').hide();
+	});
+
+	$('#nxt3, #prev4').click(function() {
+		$('#section4').show();
+		$('#section1').hide();
+		$('#section3').hide();
+		$('#section2').hide();
+		$('#section5').hide();
+		$('#section6').hide();
+	});
+
+	$('#nxt4, #prev5').click(function() {
+		$('#section5').show();
+		$('#section1').hide();
+		$('#section3').hide();
+		$('#section4').hide();
+		$('#section2').hide();
+		$('#section6').hide();
+	});
+
+	$('#nxt5').click(function() {
+		$('#section6').show();
+		$('#section1').hide();
+		$('#section3').hide();
+		$('#section4').hide();
+		$('#section5').hide();
+		$('#section2').hide();
+	});
+
+	$('#terms').click(function() {
+		$('#submitBtn').toggle();
+	});
+
+	// Changes the url to draft
+	$('#draftBtn').click(function(){
+		$('#detailsForm').attr('action', 'teacher/draft');
+	});
+});
